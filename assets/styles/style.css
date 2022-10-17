@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding: 20px 15% 20px 15%;
+  overflow: auto;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(../image/books.jpg);
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+}
+
+.jumbotron2 {
+  padding: 60px;
+  background-color: #06283d;
+  opacity: 0.8;
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.jumbotron q {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+footer,
+nav {
+  background-color: #256d85;
+}
+
+#content h2,
+h3,
+#tentang h2,
+.form h2,
+#data h2 {
+  color: #256d85;
+  margin: 0px;
+}
+#content h2 {
+  font-size: 30px;
+}
+
+.inline {
+  display: inline;
+}
+/* nav */
+header,
+nav li {
+  display: inline;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+nav a:hover {
+  font-weight: bold;
+}
+
+nav a:active {
+  font-weight: bold;
+}
+
+header {
+  display: inline;
+}
+nav li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+nav {
+  text-align: center;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  box-shadow: #000000 0px 0px 5px;
+  margin-bottom: 50px;
+  z-index: 999;
+}
+
+nav ul {
+  padding: 0;
+}
+
+.profile img {
+  border-radius: 10px;
+  float: left;
+}
+
+.profile h2 {
+  padding-bottom: 10px;
+}
+
+/* dropdown menu riview buku */
+/* Style The Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 25px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  left: -20%;
+  top: 200%;
+  display: none;
+  position: absolute;
+  padding-bottom: 10px;
+  background-color: #256d85;
+  width: 250px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 5px 10%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: white;
+  color: #256d85;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* membuat garis atas bawah di class riviewBuku */
+#riviewBuku {
+  border-top: 5px solid #256d85;
+  border-bottom: 5px solid #256d85;
+  padding: 20px;
+}
+
+#content {
+  float: left;
+  width: 65%;
+}
+
+aside {
+  float: right;
+  width: 35%;
+  padding-left: 20px;
+}
+
+.tinggi {
+  height: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* agar img berada di tengah */
+.featured-image {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.informasi {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  #content,
+  aside,
+  main {
+    width: 100%;
+    padding: 0px 100px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 40%;
+  }
+  .informasi {
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 950px) {
+  #content,
+  aside,
+  main {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #content,
+  aside,
+  main {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 365px) {
+  #content,
+  aside,
+  main {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 312px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+
+/* menghias button .lengkap */
+.lengkap {
+  background-color: #256d85;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #256d85;
+}
+
+/* animasi .lengkap pada saat hover */
+.lengkap:hover {
+  background-color: white;
+  color: #256d85;
+  border: 2px solid #256d85;
+}
+
+/* animasi .lengkap pada saat klik */
+.lengkap:active {
+  background-color: #256d85;
+  color: white;
+  border: 2px solid #256d85;
+}
+
+table th {
+  text-align: left;
+}
+
+table td {
+  text-align: left;
+}
+
+aside {
+  padding-bottom: 30px;
+}
+
+aside article header,
+figure {
+  margin: 0;
+  padding: 5px;
+}
+
+aside article header,
+.tentang {
+  padding-left: 110px;
+  margin-top: -10px;
+}
+
+/* mengatur class cover-home agar responsive dan full weight dan sudutnya tumpul*/
+
+.cover-home {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* memperindah tampilan form dan elemen di dalamnya*/
+form {
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #256d85;
+}
+
+form label {
+  width: 100%;
+  float: left;
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+form input[type="text"] {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form .submit {
+  float: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  color: #256d85;
+  margin-top: 10px;
+}
+
+/* membuat tombol submit pada saat hover */
+
+.submit:hover {
+  border: 1px solid white;
+  background-color: #256d85;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* menghias tampilan tabel saran */
+#data table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#data table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  color: #256d85;
+}
+#data table th {
+  text-align: center;
+  background-color: #256d85;
+  color: white;
+  padding: 10px;
+}
+
+/* dropdown menu burger */
+.burger {
+  float: right;
+  margin-right: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .left {
+    display: none;
+  }
+  .burger {
+    display: inline-block;
+  }
+
+  #burgerSembunyi {
+    display: none;
+  }
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
